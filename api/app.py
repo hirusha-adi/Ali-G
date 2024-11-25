@@ -5,7 +5,7 @@ app = FastAPI()
 
 
 @app.post("/v1/text/")
-async def ali_g_chat(
+def ali_g_chat(
     message: str = Form(...),
     style: str = Form(...),  # e.g., "short", "medium", "long"
     nsfw: int = Form(...),  # 0 for NSFW, 1 for no NSFW
