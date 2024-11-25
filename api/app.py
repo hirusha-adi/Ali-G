@@ -19,7 +19,7 @@ async def ali_g_chat(
     try:
         # Generate Ali G styled response
         response = g4f.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4",
             messages=[{"role": "user", "content": ali_g_prompt}],
         )
 
